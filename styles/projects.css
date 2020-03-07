@@ -1,0 +1,59 @@
+/* Projects Page styles for Kate's Portfolio */
+
+/********** Projects Page **********/
+#projects {
+	display: grid;
+	min-height: 600px;
+	height: 75vw;
+	/* calc((3 * 200px) + (2 * 45px)) */
+	max-height: 700px;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(3, 1fr);
+	grid-gap: 4vh;
+	/* border: 1px solid green; */
+}
+
+#projects .project {
+	min-height: 130px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	text-align: center;
+	border-radius: 10px;
+	overflow-y: hidden;
+	transition-duration: 0.5s;
+	border: 1px solid var(--accent);
+}
+#projects .project:hover {
+	box-shadow: 0 0 25px 2px var(--accent);
+	cursor: pointer;
+} 
+
+#projects .project div {
+	background-color: #eeeeee;
+	opacity: 0.75;
+	height: 0;
+	width: 100%;
+	overflow-y: hidden;
+	transition-duration: 0.5s;
+}
+#projects .project div h4 {
+	margin-top: 40%;
+}
+#projects .project:hover div {
+	height: 150%;
+	/* padding-top: 25%; */
+	border-bottom: 1px solid var(--accent);
+}
+
+#projects .project p {
+	position: relative;
+	bottom: -225px;
+	line-height: 25px;
+	text-indent: 0;
+	margin: 0;
+	transition-duration: 0.7s;
+}
+#projects .project:hover p {
+	bottom: -10px;
+}

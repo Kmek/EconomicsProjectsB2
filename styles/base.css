@@ -1,0 +1,105 @@
+/* Base Component styles for Kate's Portfolio */
+
+/********** Table Properties **********/
+table {
+	width: 100%;
+	border-collapse: collapse;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+th, td {
+	border-collapse: collapse;
+	padding: 10px;
+}
+
+th {
+	height: 40px;
+	color: var(--accent);
+	font-size: 20px;
+}
+
+tr {
+	border: 1px solid var(--accent);
+}
+
+tr:hover {
+	background-color: #c5c5c5;
+}
+
+td {
+	font-size: 16px;
+}
+td mark {
+	font-size: 15px;
+	padding: 0 4px;
+}
+
+/********** Base Components **********/
+h1, h2, h3, h4 {
+	margin: 5px 0;
+	color: var(--accent);
+}
+
+p {
+	font-size: 16px;
+	line-height: 24px;
+	text-indent: 25px;
+	margin: 5px 0;
+}
+
+mark {
+	background-color: #cccccc;
+	padding: 2px 5px;
+	font-family: "Courier New", Courier, monospace;
+	border: 1px solid #ffffff;
+	border-radius: 2px;
+}
+
+ul {
+	padding: 5px;
+	list-style: none;
+}
+ul li::before {
+	width: 20px;
+	display: inline-block;
+	color: var(--accent);
+	content: "\2666";
+	font-size: 20px;
+	font-weight: bold;
+}
+li {
+	line-height: 24px;
+}
+
+hr {
+	margin: 20px 15px;
+	border-top: 2px dashed var(--accent);
+}
+
+button {
+	background: none;
+	padding: 5px;
+	font-size: 16px;
+	border-radius: 5px;
+	border: 3px solid var(--accent);
+	outline: none;
+	transition-duration: 0.7s;
+}
+button:hover {
+	background-color: var(--accent);
+	color: #ffffff;
+}
+
+img {
+	width: 80%;
+	margin: 5px 0 0 10%; /*5px on top, 10% on left*/
+	border-radius: 5px;
+}
+
+a {
+	text-decoration: none;
+	/* color: black; */
+	color: var(--accent);
+	font-weight: bold;
+}
