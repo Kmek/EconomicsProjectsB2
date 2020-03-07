@@ -44,7 +44,7 @@ h1, h2, h3, h4 {
 p {
 	font-size: 16px;
 	line-height: 24px;
-	text-indent: 25px;
+	/* text-indent: 25px; */
 	margin: 5px 0;
 }
 
@@ -73,8 +73,12 @@ li {
 }
 
 hr {
+	margin: 10px 15px;
+	border-style: none;
+}
+.line {
 	margin: 20px 15px;
-	border-top: 2px dashed var(--accent);
+	border-top: 1px solid var(--accent);
 }
 
 button {
@@ -91,6 +95,19 @@ button:hover {
 	color: #ffffff;
 }
 
+input {
+	width: 140px;
+	height: 30px;
+	text-align: center;
+	font-size: 16px;
+}
+/* Chrome, Safari, Edge, Opera: hide arrows */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
 img {
 	width: 80%;
 	margin: 5px 0 0 10%; /*5px on top, 10% on left*/
@@ -99,7 +116,6 @@ img {
 
 a {
 	text-decoration: none;
-	/* color: black; */
 	color: var(--accent);
 	font-weight: bold;
 }

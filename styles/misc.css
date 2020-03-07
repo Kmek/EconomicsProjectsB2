@@ -34,3 +34,10 @@
 .transition, #page, #page hr, #page h1, #page h2, #page h3, #page img, #page mark {
     transition-duration: 2.0s;
 }
+
+/********** For Economics **********/
+#economics {
+	width: 100%;
+	height: 100%;
+	text-align: center;
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Trade Helper</title>
+	<meta name="author" content="Kate Keefe">
+	<meta name="description" content="Trade Helper">
+	<link rel="icon" href="../media/economicsIcon.png">
+
+    <link href="../styles/page.css" rel="stylesheet"/>
+    <link href="../styles/base.css" rel="stylesheet"/>
+    <link href="../styles/misc.css" rel="stylesheet"/>
+    <link href="../styles/projects.css" rel="stylesheet"/>
+</head>
+<body>
+	<div id="pageBackground">
+        <div id="header">
+            <h1 id="title">Trade Helper</h1>
+        </div>
+
+		<div id="page">
+
+            <div id="economics">
+                <button id="openLinksBtn">Open Links</button>
+                <hr class="line">
+
+                <h4>Number Of Shares: </h4>
+                <input id="shares" type="number">
+                <hr>
+
+                <h4>Price Bought At: </h4>
+                <input id="buyPrice" type="number">
+                <hr>
+
+                <h4>Commission Price: </h4>
+                <input id="commission" type="number" value=10>
+                <hr>
+
+                <h4>Desired Profit: </h4>
+                <input id="profit" type="number" value=0>
+                <hr>
+
+                <button id="calculateBtn">Calculate</button>
+                <hr>
+
+                <h4>Sell Price: </h4>
+                <p><span id="sellPrice">---</span></p>
+                <hr>
+            </div>
+            
+		</div>
+	</div>
+    
+    <div id="footer">
+        <span id="footerText">Website made by Kate Keefe</span>
+        <a href="https://github.com/Kmek/EconomicsProjectsB2" target="_blank"><button id="githubBtn">View on GitHub</button></a>
+    </div>
+
+    <script src="../scripts/tradeHelper.js"></script>
+    <!-- <script src="scripts/projects.js"></script> -->
+    <!-- <script>loadProjects()</script> -->
+
+</body>
+</html>

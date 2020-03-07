@@ -6,6 +6,10 @@ projectSets = [{
     title: "Economic Systems",
     picture: "media/graph.PNG",
     link: "https://kmek.github.io/EconomicSystems/"
+}, {
+    title: "Trading Helper",
+    picture: "media/graph.PNG",
+    link: "./docs/tradeHelper.html"
 }]
 
 // let allLinks = ["https://kmek.github.io/Portfolio/", "https://kmek.github.io/Economics7Principles/", "https://howthemarketworks.com"]
@@ -21,7 +25,7 @@ function loadProjects() {
         const projectsDiv = document.getElementById("projects")
         for (let i = 0; i < projectSets.length; i++) {
             let box = document.createElement("div")
-            box.setAttribute("onclick", ("window.open('" + projectSets[i].link + "')"))
+            box.setAttribute("onclick", ("window.open('" + projectSets[i].link + "', '_self')"))
             box.setAttribute("class", "project")
             box.style.backgroundImage = "url('" + projectSets[i].picture + "')"
 
