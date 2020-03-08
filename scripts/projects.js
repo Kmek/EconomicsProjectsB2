@@ -4,11 +4,11 @@ projectSets = [{
     link: "https://kmek.github.io/Economics7Principles/"
 }, {
     title: "Economic Systems",
-    picture: "media/graph.PNG",
+    picture: "media/graph.png",
     link: "https://kmek.github.io/EconomicSystems/"
 }, {
     title: "Trading Helper",
-    picture: "media/graph.PNG",
+    picture: "media/graph.png",
     link: "./docs/tradeHelper.html"
 }]
 

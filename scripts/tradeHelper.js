@@ -6,13 +6,14 @@ document.documentElement.style.setProperty('--minW', "300px")
 
 /******************** Constants ********************/
 var openLinksBtn = document.getElementById("openLinksBtn")
+var stockName = document.getElementById("stockName")
+var openStockBtn = document.getElementById("openStockBtn")
 var shares = document.getElementById("shares")
 var buy = document.getElementById("buyPrice")
 var commission = document.getElementById("commission")
 var profit = document.getElementById("profit")
 var calculateBtn = document.getElementById("calculateBtn")
 var sell = document.getElementById("sellPrice")
-var iframe = document.getElementById("iframe")
 
 /******************** Calculate Min Price ********************/
 // Calculate the minimum price for selling a stock
@@ -21,6 +22,8 @@ calculateBtn.onclick = function() {
         let x = parseInt(shares.value)
         sell.innerHTML = ((x * parseInt(buy.value)) + (parseFloat(commission.value) * 2) + parseFloat(profit.value)) / x
     }
+    else
+        sell.innerHTML = "---"
 }
 
 /******************** Open Multiple Links ********************/
@@ -32,11 +35,10 @@ calculateBtn.onclick = function() {
 //     }
 // }
 
-function test(stockName) {
-    // let link = window.open("https://finance.yahoo.com/quote/" + stockName)
-    // console.log(link)
-    // console.log(link.location)
-    iframe.setAttribute("src", "https://finance.yahoo.com/quote/" + stockName)
+/******************** Open Yahoo Finance Stock Page ********************/
+openStockBtn.onclick = function() {
+    if (stockName.value != "")
+        window.open("https://finance.yahoo.com/quote/" + stockName.value)
 }
 
 /******************** Using Stocks.js ********************/
