@@ -12,14 +12,6 @@ projectSets = [{
     link: "./docs/tradeHelper.html"
 }]
 
-// let allLinks = ["https://kmek.github.io/Portfolio/", "https://kmek.github.io/Economics7Principles/", "https://howthemarketworks.com"]
-// function openTheTabs() {
-//     for (let i = 0; i < allLinks.length; i++) {
-//         console.log("opening! " + i)
-//         window.open(allLinks[i], ("tab" + i), "")
-//     }
-// }
-
 function loadProjects() {
     if (document.getElementById("projects").innerHTML == "") {
         const projectsDiv = document.getElementById("projects")
