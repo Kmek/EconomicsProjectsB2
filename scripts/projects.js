@@ -6,10 +6,6 @@ projectSets = [{
     title: "Economic Systems",
     picture: "media/graph.png",
     link: "https://kmek.github.io/EconomicSystems/"
-}, {
-    title: "Trading Helper",
-    picture: "media/graph.png",
-    link: "./docs/tradeHelper.html"
 }]
 
 function loadProjects() {
