@@ -12,4 +12,4 @@ function changeAccent(color) {
     document.documentElement.style.setProperty('--accent', color)
 }
 // Change color of page
-changeAccent("#5432c2")
+changeAccent("#3e2282")
