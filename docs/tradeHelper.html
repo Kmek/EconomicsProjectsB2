@@ -13,23 +13,26 @@
 </head>
 <body>
 	<div id="pageBackground">
-        <!-- <div id="header">
-            <h1 id="title">Trade Helper</h1>
-        </div> -->
-
 		<div id="page">
 
             <div id="economics">
                 <button id="openLinksBtn" onclick="test('SSYS')">Open Links</button>
 
                 <hr class="line">
+                <!-- QUOTE / INFO -->
 
-                <h4>Name Of Stock: </h4>
-                <input id="stockName" type="text">
+                <h4>Stock Symbol: </h4>
+                <input id="stockSymbol" type="text">
                 <hr>
-                <button id="openStockBtn">Quote</button>
+
+                <button id="quoteStockBtn">Quote</button>
+                <hr>
+
+                <h4>Recent Price (1 min): </h4>
+                <p><span id="recentPrice">---</span></p>
 
                 <hr class="line">
+                <!-- CALCULATIONS -->
 
                 <h4>Number Of Shares: </h4>
                 <input id="shares" type="number">
