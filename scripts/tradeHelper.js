@@ -66,7 +66,7 @@ function requestStock(symbol) {
 
         json = JSON.parse( response );
         console.log(json)
-        json = json["Time Series (1min)"]
+        json = json["Time Series (1min)"] 
 
         // Get keys
         keys = []
